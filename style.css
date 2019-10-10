@@ -1,0 +1,1194 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.clear
+{
+    clear: both;
+}
+/*navbar*/
+header
+{
+    width: 100%;
+    
+    padding: 20px 50px;
+}
+
+ .img-nav
+{
+    float: left;
+}
+
+
+
+.img-nav img
+{
+    text-decoration: none;
+
+    width: 150px;
+}
+.menu-toggle
+{
+    display: none;
+    width: 40px;
+}
+.nav
+{
+    float: right;
+}
+
+
+.nav .list-2 li
+{
+    display: inline-block;
+    padding: 10px;
+
+}
+.nav .list-2 li:hover
+{
+    padding: 10px;
+    background-color: #888;
+    border-radius: 5px;
+}
+.nav .list-2 li a
+
+{
+    color: gray;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+.list-2 li:hover a
+{
+    color: #FFF;
+}
+.list-2 i
+{
+    color:rgb(98, 144, 243) ;
+}
+.list-2 li:hover i
+{
+    color: #fff;
+}
+
+
+
+@media (max-width: 768px){
+    
+    header
+    {
+        position: relative;
+    }
+
+    .menu-toggle
+    {
+        position: absolute;
+        top: 40%;
+        right: 2%;
+        display: block;
+        width: 40px;
+        height: 40px;
+        float:right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+
+    }
+    .menu-toggle::before
+    {
+        content: '\f0c9';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #000;
+        line-height: 40px;   
+    }
+    .menu-toggle.active::before
+    {
+        content: "\f00d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+    .nav
+    {
+        width:100%;
+        float: left;
+    }
+    .list-2
+    {
+        display: none;
+    }
+    .list-2.active 
+    {
+        display: block;
+        width:100%;
+        margin: 0;
+
+    }
+    .list-2 li 
+    {
+        margin: 0;
+        width: 100%;
+    }
+    .list-2 li:hover 
+    {
+        background-color: rgb(22, 22, 22);
+        color: #fff;
+
+    }
+    
+    
+
+}
+
+
+
+
+
+/*form*/
+
+.task
+{
+    width: 100%;
+    display: flex;
+    padding: 50px 50px ;
+}
+.task .f-items
+{
+    width: 60%;
+    
+    margin-right: 5%;
+}
+
+.payment h3
+{
+    font-weight: 100;
+    font-size: 14px;
+}
+.image-1
+{
+    margin: 40px 0 20px 0;
+    width: 200px;
+    background-color: #fcbb08;
+    padding: 1px;
+    text-align: center;
+    border-radius: 5px;
+}
+.image-1:hover .lin-a
+{
+    cursor: pointer;
+}
+.image-1 img
+{
+    width:150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+ .b-between
+{
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+ .b-between::before
+{
+    content: "";
+    background-color:lightgray;
+    width: 40%;
+    height: 1px;
+    border-color:lightgray;
+    
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.b-between::after
+{
+    content: "";
+    background-color:lightgray;
+    width: 40%;
+    height: 1px;
+    border-color: lightgray;
+    
+    position: absolute;
+    top: 40%;
+    right: 0;
+
+    
+}
+
+.formOne label
+{
+    font-size: 20px;
+}
+.formOne .inpOne
+{
+    width: 100%;
+    padding: 10px;
+    margin: 7px 0;
+    border-radius: 5px;
+}
+
+/* input Checkbox */
+
+input[type=checkbox] + label
+{
+    display: block;
+    margin-bottom: 30px;;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox] + label::before {
+
+    content: "\2714";
+    border: #000 solid 1px;
+    border-radius: 2px;
+    padding: 1px 3px ;
+    margin-right: 5px;
+    color: transparent;
+}
+
+input[type=checkbox]:checked + label::before{
+    background-color: #f9f9f9;
+    color: #000;
+}
+.formOne .label2
+{
+
+    font-size: 16px;
+}
+
+.formTwo .Adress h3
+{
+    font-weight: 300;
+}
+.formTwo .Adress .shipName
+{
+    width: 49.5%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.formTwo .Adress .shipAdress
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.formTwo .selections .slc
+{
+    width: 32.9%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.formTwo .Adress a
+{
+    text-decoration: none;
+}
+.formTwo .Adress .span
+{
+    font-size: 15px;
+    font-weight: 200;
+}
+.formTwo .Adress .back
+{
+    font-size: 15px;
+    font-weight: 200;
+
+}
+
+.btn
+{
+    border-radius: 5px;
+    border-style: none;
+    color:#FFF;
+    background-color: #09c;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    float: right;
+}
+
+
+/*shipping items*/
+
+.shipping-items
+{
+    width: 40%;
+    margin-top: 50px;
+
+}
+.first
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.first .f-img
+{
+    width: 15%;
+    
+}
+.first .f-img img
+{
+    width: 80px;
+    margin: 10px;
+    border: 1px solid;
+}
+
+.first .salary
+{
+    width: 15%;
+}
+.first .salary-f
+{
+    width: 9%;
+}
+.first .salary span
+{
+    text-decoration-line: line-through;
+}
+.first .des {
+    width: 65%;
+}
+
+
+
+.first p
+{
+    font-size: 15px;
+    margin-top: 40px;
+}
+.first p
+{
+    font-weight: 800;
+    margin-top: 40px;
+   
+}
+
+.second
+{
+    width: 100%;
+    
+}
+.second .title-1 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.second .title-1 h5
+{
+    width: 85%;
+    margin: 10px;
+}
+.second .title-1 span 
+{
+    width: 10%;
+}
+
+
+
+
+.second .title-2 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second .title-2 h5
+{
+    width: 85%;
+    margin: 10px;
+}
+.second .title-2 span
+{
+    width: 7%;
+}
+
+
+
+
+.second .title-3 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second .title-3 h5
+{
+    width: 85%;
+    margin: 10px;
+}
+.second .title-3 span
+{
+    width: 8%;
+}
+
+footer
+{
+    height: 120px;
+    background-color: #000;
+}
+.foo-items
+{
+    text-align: center;
+    padding: 20px;
+}
+ .foo-items li
+{
+    display: inline;
+    padding: 20px;
+    text-align: center;
+}
+.foo-items li a
+{
+    color: #FFF;
+    text-decoration: none;
+}
+.social 
+{
+    
+    text-align: center;
+}
+.social p
+{
+    color: #FFF;
+}
+.social span
+{
+    color: #09c;
+    cursor: pointer;
+}
+.social li
+{
+    
+    display: inline;
+    padding: 20px;
+
+
+}
+.social li a 
+{
+    size: 20px;
+    
+    color: #FFF;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1200px)
+{
+
+    
+.task
+{
+    width: 100%;
+    display: flex;
+
+    padding: 50px 50px ;
+}
+.task .f-items
+{
+    width: 100%;
+    
+    margin-right: 5%;
+    float: right;
+}
+
+
+.payment h3
+{
+    display: none;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.image-1
+{
+    margin: 40px 0;
+    width: 200px;
+    background-color: #ecb316;
+    text-align: center;
+    padding: 1px;
+    border-radius: 5px;
+}
+.image-1 img
+{
+    width:150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+ .b-between
+{
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+ .b-between::before
+{
+    content: "";
+    background-color:lightgray;
+    width: 40%;
+    height: 1px;
+    border-color:lightgray;
+    
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.b-between::after
+{
+    content: "";
+    background-color:lightgray;
+    width: 40%;
+    height: 1px;
+    border-color: lightgray;
+    
+    position: absolute;
+    top: 40%;
+    right: 0;
+
+    
+}
+
+.formOne label
+{
+    font-size: 20px;
+}
+.formOne .inpOne
+{
+    width: 100%;
+    padding: 10px;
+    margin: 7px 0;
+    border-radius: 5px;
+}
+
+/* input Checkbox */
+
+input[type=checkbox] + label
+{
+    display: block;
+    margin-bottom: 30px;;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox] + label::before {
+
+    content: "\2714";
+    border: #000 solid 1px;
+    border-radius: 2px;
+    padding: 1px 3px ;
+    margin-right: 5px;
+    color: transparent;
+}
+
+input[type=checkbox]:checked + label::before{
+    background-color: #f9f9f9;
+    color: #000;
+}
+.formOne .label2
+{
+
+    font-size: 16px;
+}
+
+.formTwo .Adress h3
+{
+    font-weight: 300;
+}
+.formTwo .Adress .shipName
+{
+    width: 49%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.formTwo .Adress .shipAdress
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.formTwo .selections .slc
+{
+    width: 32.5%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.formTwo .Adress a
+{
+    text-decoration: none;
+}
+.formTwo .Adress .back
+{
+    float: left;
+    width: 100%;
+    text-align: center
+}
+
+.btn
+{
+    margin: auto;
+    border-radius: 5px;
+    border-style: none;
+    color:#FFF;
+    background-color: #09c;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    width: 100%;
+    float: left;
+}
+/*shipping items*/
+
+.shipping-items
+{
+    width: 100%;
+}
+.first
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first .f-img
+{
+    width: 15%;
+    
+}
+.first .f-img img
+{
+    width: 80px;
+    margin: 10px;
+    border: 1px solid;
+}
+
+.first .salary
+{
+    width: 15%;
+}
+.first .salary-f
+{
+    width: 9%;
+}
+.first .salary span
+{
+    text-decoration-line: line-through;
+}
+.first .des {
+    width: 65%;
+}
+
+
+
+.first p
+{
+    font-size: 15px;
+    margin-top: 40px;
+}
+.first p
+{
+    font-weight: 800;
+    margin-top: 40px;
+   
+}
+
+.second
+{
+    width: 100%;
+    
+}
+.second .title-1 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.second .title-1 h5
+{
+    width: 85%;
+    margin: 10px;
+}
+.second .title-1 span 
+{
+    width: 10%;
+}
+
+
+
+
+.second .title-2 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second .title-2 h5
+{
+    width: 85%;
+    margin: 10px;
+}
+.second .title-2 span
+{
+    width: 7%;
+}
+
+
+
+
+.second .title-3 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second .title-3 h5
+{
+    width: 85%;
+    margin: 10px;
+}
+.second .title-3 span
+{
+    width: 8%;
+}
+
+footer
+{
+    height: 120px;
+    background-color: #000;
+}
+.foo-items
+{
+    text-align: center;
+    padding: 10px;
+}
+ .foo-items li
+{
+    display: inline;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.foo-items li a
+{
+    color: #FFF;
+    text-decoration: none;
+}
+.social 
+{
+    
+    text-align: center;
+}
+.social p
+{
+    font-size: 16px;
+    color: #FFF;
+}
+.social span
+{
+    color: #09c;
+    cursor: pointer;
+}
+.social li
+{
+    
+    display: inline;
+    padding: 10px;
+
+
+}
+.social li a 
+{
+    font-size: 15px;
+    
+    color: #FFF;
+    text-decoration: none;
+}
+
+}
+
+
+@media screen and (max-width:768px)
+{
+
+    
+.task
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 50px 50px ;
+}
+.task .f-items
+{
+    width: 100%;
+    
+    margin-right: 5%;
+    float: right;
+}
+
+
+.payment h3
+{
+    display: none;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.image-1
+{
+    margin: 40px 0;
+    width: 100%;
+    background-color: #ecb316;
+    text-align: center;
+    padding: 1px;
+    border-radius: 5px;
+}
+.image-1 img
+{
+    width:150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+ .b-between
+{
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+ .b-between::before
+{
+    content: "";
+    background-color:lightgray;
+    width: 40%;
+    height: 1px;
+    border-color:lightgray;
+    
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.b-between::after
+{
+    content: "";
+    background-color:lightgray;
+    width: 40%;
+    height: 1px;
+    border-color: lightgray;
+    
+    position: absolute;
+    top: 40%;
+    right: 0;
+
+    
+}
+
+.formOne label
+{
+    font-size: 20px;
+}
+.formOne .inpOne
+{
+    width: 100%;
+    padding: 10px;
+    margin: 7px 0;
+    border-radius: 5px;
+}
+
+/* input Checkbox */
+
+input[type=checkbox] + label
+{
+    display: block;
+    margin-bottom: 30px;;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox] + label::before {
+
+    content: "\2714";
+    border: #000 solid 1px;
+    border-radius: 2px;
+    padding: 1px 3px ;
+    margin-right: 5px;
+    color: transparent;
+}
+
+input[type=checkbox]:checked + label::before{
+    background-color: #f9f9f9;
+    color: #000;
+}
+.formOne .label2
+{
+
+    font-size: 16px;
+}
+
+.formTwo .Adress h3
+{
+    font-weight: 300;
+}
+.formTwo .Adress .shipName
+{
+    width: 49%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.formTwo .Adress .shipAdress
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.formTwo .selections .slc
+{
+    width: 32.5%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.formTwo .Adress a
+{
+    text-decoration: none;
+}
+.formTwo .Adress .back
+{
+    float: left;
+    width: 100%;
+    text-align: center
+}
+
+.btn
+{
+    margin: auto;
+    border-radius: 5px;
+    border-style: none;
+    color:#FFF;
+    background-color: #09c;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    width: 100%;
+    float: left;
+}
+/*shipping items*/
+
+.shipping-items
+{
+    width: 100%;
+}
+.first
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first .f-img
+{
+    width: 15%;
+    
+}
+.first .f-img img
+{
+    width: 80px;
+    margin: 10px;
+    border: 1px solid;
+}
+
+.first .salary
+{
+    width: 15%;
+}
+.first .salary-f
+{
+    width: 9%;
+}
+.first .salary span
+{
+    text-decoration-line: line-through;
+}
+.first .des {
+    width: 65%;
+}
+
+
+
+.first p
+{
+    font-size: 15px;
+    margin-top: 40px;
+}
+.first p
+{
+    font-weight: 800;
+    margin-top: 40px;
+   
+}
+
+.second
+{
+    width: 100%;
+    
+}
+.second .title-1 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.second .title-1 h5
+{
+    width: 85%;
+    margin: 10px;
+}
+.second .title-1 span 
+{
+    width: 10%;
+}
+
+
+
+
+.second .title-2 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second .title-2 h5
+{
+    width: 85%;
+    margin: 10px;
+}
+.second .title-2 span
+{
+    width: 7%;
+}
+
+
+
+
+.second .title-3 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second .title-3 h5
+{
+    width: 85%;
+    margin: 10px;
+}
+.second .title-3 span
+{
+    width: 8%;
+}
+
+footer
+{
+    height: 120px;
+    background-color: #000;
+}
+.foo-items
+{
+    text-align: center;
+    padding: 10px;
+}
+ .foo-items li
+{
+    display: inline;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.foo-items li a
+{
+    color: #FFF;
+    text-decoration: none;
+}
+.social 
+{
+    
+    text-align: center;
+}
+.social p
+{
+    font-size: 16px;
+    color: #FFF;
+}
+.social span
+{
+    color: #09c;
+    cursor: pointer;
+}
+.social li
+{
+    
+    display: inline;
+    padding: 10px;
+
+
+}
+.social li a 
+{
+    font-size: 15px;
+    
+    color: #FFF;
+    text-decoration: none;
+}
+
+}
+
+
+
+
+
+
+
